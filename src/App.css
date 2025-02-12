@@ -57,7 +57,7 @@
 
 .App-header{
   position: relative;
-  background-color: chartreuse;
+  background-color:azure;
   width: 100%;
   grid-column: span 2;
   display: flex;
@@ -93,4 +93,28 @@
   width: 8vmin;
   height: 5vmin;
   margin-right: 5vmin;
+  display: block;
+  padding: 0;
+  background: none;
+  border: 0cap;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-img{
+  width: 5vmin;
+  height: 5vmin;
+}
+
+.my-name{
+  position: relative;
+  left: -80vmin;
+  font-size: 1vmin;
+}
+
+.project-number{
+  position: relative;
+  left: -105vmin;
+  top: 70px;
+  font-size: 50%;
 }

@@ -5,10 +5,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button className='header-button-main header-button'>Main</button>
-        <button className='header-button-projects header-button'>Projects</button>
-        <button className='header-button-about header-button'>About me</button>
-        <button className='header-button-contacts header-button'>Contacts</button>
+        <div className='my-name'><h1>Anastasiya Peretyatko</h1></div>
+        <div className='project-number'><h2>Project 3</h2></div>
+        <button className='header-button'><img src='/home.svg' alt='Home' className='button-img'></img></button>
+        <button className='header-button'><img src='/projects.svg' alt='Projects' className='button-img'></img></button>
+        <button className='header-button'><img src='/about.png' alt='About me' className='button-img'></img></button>
+        <button className='header-button'><img src='/contacts.png' alt='Contacts' className='button-img'></img></button>
       </header>
       <main className="App-main">
         <p className='main-p'>Main</p>
