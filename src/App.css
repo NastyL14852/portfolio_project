@@ -1,0 +1,96 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .App{
+  position: relative;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: grid;
+  grid-template-rows: 8vmin 80vmin 12vmin;
+  grid-template-columns: 20% 80%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vmin;
+}
+
+.App-header{
+  position: relative;
+  background-color: chartreuse;
+  width: 100%;
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+
+.App-main{
+  position: relative;
+  width: 100%;
+  grid-column: 2;
+  background-color: aqua;
+}
+
+.App-sidebar{
+  position: relative;
+  width: 100%;
+  background-color: blueviolet;  
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.App-footer{
+  position: relative;
+  width: 100%;
+  height: 12vmin;
+  background-color: burlywood;
+  grid-column: span 2;
+}
+
+.header-button{
+  width: 8vmin;
+  height: 5vmin;
+  margin-right: 5vmin;
+}
