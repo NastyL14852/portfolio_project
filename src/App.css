@@ -51,7 +51,7 @@
   display: grid;
   grid-template-rows: 8vmin 80vmin 12vmin;
   grid-template-columns: 20% 80%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2vmin;
 }
 
@@ -83,10 +83,13 @@
 
 .App-footer{
   position: relative;
+  display: flex;
   width: 100%;
   height: 12vmin;
-  background-color: burlywood;
+  background-color: azure;
   grid-column: span 2;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-button{
@@ -106,15 +109,19 @@
   height: 5vmin;
 }
 
-.my-name{
+.name-text{
   position: relative;
-  left: -80vmin;
-  font-size: 1vmin;
+  right: 30%;
+}
+
+.my-name{
+  font-weight: 600;
 }
 
 .project-number{
+  font-weight: 200;
+}
+
+.Footer-p{
   position: relative;
-  left: -105vmin;
-  top: 70px;
-  font-size: 50%;
 }

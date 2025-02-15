@@ -5,8 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className='my-name'><h1>Anastasiya Peretyatko</h1></div>
-        <div className='project-number'><h2>Project 3</h2></div>
+        <div className='name-text'>
+          <div className='my-name'><h1>Anastasiya Peretyatko</h1></div>
+          <div className='project-number'><h2>Project 3</h2></div>
+        </div>
         <button className='header-button'><img src='/home.svg' alt='Home' className='button-img'></img></button>
         <button className='header-button'><img src='/projects.svg' alt='Projects' className='button-img'></img></button>
         <button className='header-button'><img src='/about.png' alt='About me' className='button-img'></img></button>
@@ -19,7 +21,7 @@ function App() {
         <p className='Sidebar-p'>Sidebar</p>
       </aside>
       <footer className='App-footer'>
-        <p className='Footer-p'>Footer</p>
+        <p className='Footer-p'>© 2025 All Rights Reserved by ib-themes.</p>
       </footer>
     </div>
   );
