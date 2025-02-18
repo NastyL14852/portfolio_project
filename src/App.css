@@ -47,6 +47,11 @@
   box-sizing: border-box;
 }
 
+h2{
+  font-size: 5vmin;
+  font-weight: 600 ;
+}
+
 .App{
   display: grid;
   grid-template-rows: 8vmin 80vmin 12vmin;
@@ -117,7 +122,6 @@
 .header-button{
   width: 8vmin;
   height: 5vmin;
-  /* margin-right: 5vmin; */
   display: block;
   padding: 0;
   background: none;
@@ -179,4 +183,50 @@ article{
   background-color: dimgray;
   border-radius: 5cap;
   margin-top: 10vmin;
+  color:beige;
 }
+
+.article_title{
+  display: flex;
+  width: 100%;
+  height: 10vmin;
+  justify-content: center;
+  align-items: center; 
+}
+
+.article_text{
+  display: block;
+  position: relative;
+  padding: 2vmin 5vmin 5vmin 5vmin;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.article_text::-webkit-scrollbar { width: 0; }
+
+.projects {
+  overflow-x: auto; /* Включаем горизонтальную прокрутку */
+  white-space: nowrap; /* Запрещаем перенос строк */
+}
+
+.wrap-projects {
+  display: inline-block; /* Позволяет элементам располагаться в одну линию */
+}
+
+.project-card {
+  display: inline-block; /* Элементы будут располагаться в одну линию */
+  width: 40vmin; /* Ширина карточки проекта */
+  height: 40vmin; /* Высота карточки проекта */
+  margin-right: 6vmin; /* Отступ между карточками */
+  margin-left: 6vmin;
+  margin-bottom: 3vmin;
+  margin-top: 1vmin;
+}
+
+.project-card img {
+  width: 100%; /* Изображение занимает всю ширину карточки */
+  height: 100%; /* Изображение занимает всю высоту карточки */
+  object-fit: cover; /* Сохраняем пропорции изображения, обрезая его при необходимости */
+}
+
+.projects::-webkit-scrollbar { width: 0; }

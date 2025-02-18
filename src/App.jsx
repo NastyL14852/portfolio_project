@@ -17,12 +17,25 @@ function App() {
         </div>
       </header>
       <main className="App-main">
-        <article className='about-me'></article>
-        <article className='skills'></article>
+        <article className='about-me'>
+          <h2 className='article_title'>Обо мне</h2>
+          <div className='article_text'><p>Я студентка третьего курса Московского Технического Университета Связи и Информатики, 
+            на специальности Информатика и вычислительная техника с профилем Искусственный интеллект и машинное обучение. 
+            Очень трудолюбивый, ответственный и позитивный человек! Люблю креативить и писать код!</p></div>
+        </article>
         <article className='projects'>
-          <section className='project-1'></section>
-          <section className='project-2'></section>
-          <section className='project-3'></section>
+          <h2 className='article_title'>Проекты</h2>
+          <div className='wrap-projects'>
+            <section className='project-1 project-card'><img src='/pr1.jpg' alt='Проект 1 фото'></img></section>
+            <section className='project-2 project-card'><img src='/pr2.jpg' alt='Проект 2 фото'></img></section>
+            <section className='project-3 project-card'><img src='/pr3.jpg' alt='Проект 3 фото'></img></section>
+          </div>
+        </article>
+        <article className='skills'>
+        <h2 className='article_title'>Мои умения</h2>
+        <div className='article_text'><p>Я студентка третьего курса Московского Технического Университета Связи и Информатики, 
+            на специальности Информатика и вычислительная техника с профилем Искусственный интеллект и машинное обучение. 
+            Очень трудолюбивый, ответственный и позитивный человек! Люблю креативить и писать код!</p></div>
         </article>
       </main>
       <aside className='App-sidebar'>
