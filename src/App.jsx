@@ -42,7 +42,16 @@ function App() {
         <div className='my-photo'>
           <img src='/my-photo.jpg' alt='Me :)' className='my-photo-img'></img>
         </div>
-        <div className='sidebar-box'></div>
+        <div className='sidebar-box'>
+          <div className='name-place'><p>Перетятько Анастасия</p></div>
+          <div className='profession-place'><p>Frontend-developer</p></div>
+          <div className='location-place'><p>Moscow, Russia</p></div>
+          <div className='social-networks-box'>
+            <a href='https://vk.com/anesthesia2203'><img src='/vk.svg' alt='VK' className='button-img social-network'></img></a>
+            <a href='https://vk.com/anesthesia2203'><img src='/tg.svg' alt='TG' className='button-img social-network'></img></a>
+            <a href='https://vk.com/anesthesia2203'><img src='/mail.svg' alt='Yandex' className='button-img social-network'></img></a>
+          </div>
+        </div>
       </aside>
       <footer className='App-footer'>
         <p className='Footer-p'>© 2025 All Rights Reserved by ib-themes.</p>

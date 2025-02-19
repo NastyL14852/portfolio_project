@@ -158,13 +158,16 @@ h2{
 }
 
 .sidebar-box{
+  display: flex;
+  flex-direction: column;
   background-color: dimgray;
   width: 32vmin;
   height: 60vmin;
-  position: absolute;
+  position: relative;
   top: 10vmin;
   z-index: 10;
   border-radius: 2cap;
+  align-items: center;
 }
 
 .my-photo{
@@ -205,28 +208,86 @@ article{
 .article_text::-webkit-scrollbar { width: 0; }
 
 .projects {
-  overflow-x: auto; /* Включаем горизонтальную прокрутку */
-  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden;
 }
 
 .wrap-projects {
-  display: inline-block; /* Позволяет элементам располагаться в одну линию */
+  margin: 2vmin 10vmin 2vmin 8vmin;
+  display: flex; /* Элементы располагаются в одну линию */
+  overflow-x: auto; /* Включаем горизонтальную прокрутку */
+  scroll-snap-type: x mandatory; /* Плавная прокрутка */
+  gap: 6vmin; /* Отступы между карточками */
+  padding-bottom: 10px; /* Отступ для удобной прокрутки */
+  white-space: nowrap; /* Запрещаем перенос строк */
 }
 
 .project-card {
-  display: inline-block; /* Элементы будут располагаться в одну линию */
-  width: 40vmin; /* Ширина карточки проекта */
-  height: 40vmin; /* Высота карточки проекта */
-  margin-right: 6vmin; /* Отступ между карточками */
-  margin-left: 6vmin;
-  margin-bottom: 3vmin;
-  margin-top: 1vmin;
+  position: relative;
+  flex: 0 0 56vmin; /* Фиксированная ширина карточки */
+  height: 42vmin; /* Фиксированная высота карточки */
 }
 
 .project-card img {
-  width: 100%; /* Изображение занимает всю ширину карточки */
-  height: 100%; /* Изображение занимает всю высоту карточки */
-  object-fit: cover; /* Сохраняем пропорции изображения, обрезая его при необходимости */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.projects::-webkit-scrollbar { width: 0; }
+.wrap-projects::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.name-place{
+  position: relative;
+  display: flex;
+  top: 10vmin;
+  height: 7vmin;
+  width: 30vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-place p {
+  border-bottom: 2px solid black; /* Толщина и цвет линии */
+  padding-bottom: 3px; /* Отступ от текста */
+}
+
+.profession-place{
+  position: relative;
+  display: flex;
+  top: 15vmin;
+  height: 5vmin;
+  width: 24vmin;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2cap;
+  background-color:bisque;
+}
+
+.location-place{
+  position: relative;
+  display: flex;
+  top: 23vmin;
+  height: 7vmin;
+  width: 30vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-place p {
+  border-bottom: 2px solid black; /* Толщина и цвет линии */
+  padding-bottom: 3px; /* Отступ от текста */
+}
+
+.social-networks-box{
+  position: relative;
+  display: flex;
+  top: 30vmin;
+  gap: 2vmin;
+}
+
+.social-network{
+  width: 7vmin;
+  height: 7vmin;
+}
