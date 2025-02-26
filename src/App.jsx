@@ -48,8 +48,8 @@ function App() {
           <div className='location-place'><p>Moscow, Russia</p></div>
           <div className='social-networks-box'>
             <a href='https://vk.com/anesthesia2203'><img src='/vk.svg' alt='VK' className='button-img social-network'></img></a>
-            <a href='https://vk.com/anesthesia2203'><img src='/tg.svg' alt='TG' className='button-img social-network'></img></a>
-            <a href='https://vk.com/anesthesia2203'><img src='/mail.svg' alt='Yandex' className='button-img social-network'></img></a>
+            <a href='https://t.me/Anastesiya1485'><img src='/tg.svg' alt='TG' className='button-img social-network'></img></a>
+            <a href='mailto:peretyatkoanastasija@yandex.by'><img src='/mail.svg' alt='Yandex' className='button-img social-network'></img></a>
           </div>
         </div>
       </aside>
